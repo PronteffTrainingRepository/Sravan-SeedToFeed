@@ -106,7 +106,7 @@ export default class Login extends Component {
 
   render() {
     return (
-      <KeyboardAvoidingView
+      <SafeAreaView
         behavior={Platform.OS == "ios" ? "padding" : "height"}
         style={styles.container}
       >
@@ -250,7 +250,7 @@ export default class Login extends Component {
           <View style={styles.buble3}></View>
           <View style={styles.buble4}></View>
         </View>
-      </KeyboardAvoidingView>
+      </SafeAreaView>
     );
   }
 }
@@ -370,9 +370,7 @@ const styles = StyleSheet.create({
     marginRight: -width * 0.25,
     borderRadius: 100,
     position: "absolute",
-
     right: 0,
-
     bottom: 0,
   },
   buble4: {

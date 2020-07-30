@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "SeedToFeed",
-    "slug": "SeedToFeed",
+    "slug": "seedtofeed",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -22,6 +22,6 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "description": "1.0.0"
+    "description": "1.0.2\n"
   }
 }
