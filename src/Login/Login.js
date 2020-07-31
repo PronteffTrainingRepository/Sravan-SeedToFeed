@@ -106,10 +106,7 @@ export default class Login extends Component {
 
   render() {
     return (
-      <SafeAreaView
-        behavior={Platform.OS == "ios" ? "padding" : "height"}
-        style={styles.container}
-      >
+      <SafeAreaView style={styles.container}>
         <View>
           <View style={styles.buble2}></View>
           <View style={styles.buble}></View>
@@ -157,7 +154,6 @@ export default class Login extends Component {
             onChangeText={(username) => this.setState({ username })}
             placeholder={"Mobile Number"}
             placeholderTextColor="green"
-            inlineImageLeft="username"
             keyboardType="number-pad"
             name="mobileNumber"
             textContentType="telephoneNumber"
@@ -345,9 +341,8 @@ const styles = StyleSheet.create({
     borderRadius: 100,
     position: "absolute",
     left: 0,
-    right: 0,
+
     top: 0,
-    bottom: 0,
   },
   buble2: {
     backgroundColor: "#FCC93B",
@@ -358,9 +353,8 @@ const styles = StyleSheet.create({
     borderRadius: 100,
     position: "absolute",
     left: 0,
-    right: 0,
+
     top: 0,
-    bottom: 0,
   },
   buble3: {
     backgroundColor: "#FCC93B",

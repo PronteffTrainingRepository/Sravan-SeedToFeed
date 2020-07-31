@@ -3,19 +3,21 @@ import React from "react";
 import { StyleSheet, Text, View, SafeAreaView } from "react-native";
 import Login from "./src/Login/Login";
 import HomeScreen from "./src/Home/HomeScreen";
-import MyDrawerNavigator from "./src/Drawer/MyDrawerNavigator";
-import Navigator from "./src/Drawer/Navigator";
+// import MyDrawerNavigator from "./src/Drawer/MyDrawerNavigator";
+// import Navigator from "./src/Drawer/Navigator";
+import Details from "./src/Farmer and FarmerDetails/Details";
 
 export default function App() {
   return (
     <View style={styles.container}>
       <SafeAreaView>
         {/* <Login /> */}
-        <HomeScreen />
+        {/* <HomeScreen /> */}
         {/* <Navigator /> */}
         {/* <MyDrawerNavigator /> */}
+        <Details />
       </SafeAreaView>
-      <StatusBar style="auto" />
+      {/* <StatusBar style="auto" /> */}
     </View>
   );
 }
